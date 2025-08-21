@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/camar/Desktop/novo/index.html# -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismael Camargo — Portfólio | TI &amp; Segurança do Trabalho</title>
+  <meta name="description" content="Portfólio profissional de TI e Segurança do Trabalho: projetos, experiências, certificações e contatos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet" href="file:///C:/Users/camar/Desktop/novo/style.css">
+  <link href="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #0f1624;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #22d3ee; /* Ciano */
+      --accent-2: #a78bfa; /* Roxo claro */
+      --ring: rgba(34, 211, 238, 0.35);
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --muted: #64748b;
+        --text: #0f172a;
+        --shadow: 0 10px 30px rgba(2,6,23,0.08);
+        --ring: rgba(99,102,241,0.25);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    h1 {
+        font-family:cursive;
+    }
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 85% -10%, rgba(34,211,238,0.08), transparent 60%),
+                  radial-gradient(1000px 600px at -10% 10%, rgba(167,139,250,0.10), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(15,22,36,0.8), rgba(15,22,36,0.35));
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{
+      width:40px;height:40px;border-radius:12px;
+      background: conic-gradient(from 210deg, var(--accent), var(--accent-2));
+      box-shadow: inset 0 0 20px rgba(255,255,255,0.25), 0 0 30px rgba(34,211,238,0.25);
+    }
+    .brand h1{font-size:18px;margin:0;font-weight:700}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{padding:10px 12px;border-radius:12px;color:var(--muted)}
+    .nav-links a:hover{color:var(--text);background:rgba(148,163,184,0.12)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid rgba(148,163,184,0.25);background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.00));box-shadow:var(--shadow)}
+    .btn.primary{border-color:transparent;background:linear-gradient(90deg, var(--accent), var(--accent-2));color:#0b0f17;font-weight:700}
+    .btn:hover{transform:translateY(-1px);transition:transform .15s ease}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:48px 24px}
+    @media (max-width: 900px){.hero{grid-template-columns:1fr;}}
+    .hero h2{font-size:clamp(28px, 4vw, 42px);margin:0 0 12px;font-weight:800;letter-spacing:-0.02em}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+    .badge{font-size:12px;border:1px solid rgba(148,163,184,0.25);padding:6px 10px;border-radius:999px;color:var(--muted)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.00));border:1px solid rgba(148,163,184,0.15);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+    .hero-visual{position:relative;overflow:hidden;border-radius:var(--radius);}
+    .hero-visual .frame{aspect-ratio: 4/3; background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat; border-bottom:1px solid rgba(148,163,184,0.15)}
+    .hero-visual .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(148,163,184,0.15)}
+    .hero-visual .strip img{aspect-ratio: 1/1;object-fit:cover}
+
+    section{padding:36px 24px}
+    section h3{font-size:22px;margin:0 0 16px}
+
+    .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+    @media (max-width: 900px){.about{grid-template-columns:1fr}}
+
+    .about .cover{overflow:hidden;border-radius:var(--radius)}
+    .about .cover img{aspect-ratio: 4/3;object-fit:cover}
+
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+    @media (max-width: 1000px){.grid.cols-3,.grid.cols-4{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width: 700px){.grid.cols-3,.grid.cols-4,.grid.cols-2{grid-template-columns:1fr}}
+
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(148,163,184,0.25);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+
+    .list{display:flex;flex-wrap:wrap;gap:8px}
+
+    .proj-card{overflow:hidden}
+    .proj-card img{aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid rgba(148,163,184,0.15)}
+    .proj-card .content{padding:14px}
+    .proj-card h4{margin:0 0 8px;font-size:18px}
+    .proj-card p{margin:0 0 12px;color:var(--muted)}
+    .proj-actions{display:flex;gap:10px}
+
+    .timeline{position:relative}
+    .timeline::before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(180deg, var(--accent), transparent)}
+    .titem{position:relative;padding-left:48px;margin-bottom:18px}
+    .titem::before{content:"";position:absolute;left:10px;top:6px;width:16px;height:16px;border-radius:999px;background:var(--accent);box-shadow:0 0 0 4px var(--ring)}
+    .titem h4{margin:0 0 6px}
+    .titem .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+
+    .cert{display:flex;gap:14px;align-items:flex-start}
+    .cert img{width:48px;height:48px;border-radius:10px;object-fit:cover}
+
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+    @media (max-width:900px){.contact{grid-template-columns:1fr}}
+    .contact form{display:grid;gap:12px}
+    input, textarea{
+      width:100%;padding:12px 14px;border-radius:14px;border:1px solid rgba(148,163,184,0.25);
+      background:rgba(2,6,23,0.25);color:var(--text);outline:none;
+    }
+    input:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--ring)}
+
+    .footer{padding:28px 24px;color:var(--muted);border-top:1px solid rgba(148,163,184,0.15);text-align:center}
+
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{border:1px dashed rgba(148,163,184,0.35);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:800px){.split{grid-template-columns:1fr}}
+
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner container">
+      <a class="brand" href="file:///C:/Users/camar/Desktop/novo/index.html#top" aria-label="Ir para o topo">
+        <span aria-hidden="true" class="logo"></span>
+        <h1>Ismael Camargo - em atualização</h1>
+      </a>
+      <div class="nav-links">
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#sobre">Sobre</a>
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#habilidades">Habilidades</a>
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#experiencia">Experiências</a>
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#projetos">Projetos</a>
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#certificacoes">Certificações</a>
+        <a href="file:///C:/Users/camar/Desktop/novo/index.html#contato" class="btn">Contato</a>
+        <button id="themeToggle" class="btn" aria-label="Alternar tema">🌗</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero container">
+    <div>
+      <h2>Profissional de <span style="background:linear-gradient(90deg, var(--accent), var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">TI &amp; Segurança do Trabalho</span></h2>
+      <p>Integro tecnologia e prevenção para criar ambientes de trabalho mais <strong>seguros, eficientes</strong> e em conformidade. Experiência em suporte, redes e segurança da informação, com sólida atuação em <abbr title="Saúde e Segurança do Trabalho">SST</abbr> (NRs, PPRA/PGR, treinamentos e cultura de segurança).</p>
+      <div class="badges">
+        <span class="badge">Infra &amp; Redes</span>
+        <span class="badge">Segurança da Informação</span>
+        <span class="badge">PGR / PCMSO</span>
+        <span class="badge">NR-10 • NR-35</span>
+        <span class="badge">ISO 45001</span>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:18px">
+        <a class="btn primary" href="file:///C:/Users/camar/Desktop/novo/index.html#projetos">Ver projetos</a>
+        <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#contato">Fale comigo</a>
+      </div>
+    </div>
+    <div class="hero-visual card" aria-hidden="true">
+      <div class="frame"></div>
+      <div class="strip">
+        <img alt="Dash de segurança" src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1556157382-97eda2d62296">
+        <img alt="Equipe em obra com EPI" src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1541976076758-347942db1970">
+        <img alt="Servidor e cabling" src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1585079542156-2755d9c8affd">
+        <img alt="Checklist de segurança" src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1564510714747-69c3bc1fab47">
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="container">
+    <h3>Sobre mim</h3>
+    <div class="about">
+      <div class="cover card">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1522075469751-3a6694fb2f61" alt="Foto profissional (substitua por sua imagem)">
+      </div>
+      <div class="card" style="padding:18px">
+        <p><strong>Resumo:</strong> Profissional com formação em <em>Gestão de Segurança do Trabalho</em> e atuação em TI. Experiência com <strong>suporte a usuários, administração de redes</strong> e implantação de <strong>boas práticas de SST</strong> no chão de fábrica e em escritórios. Foco em dados, indicadores e melhoria contínua.</p>
+        <div class="split">
+          <div>
+            <h4 style="margin:0 0 8px">Áreas de Atuação</h4>
+            <div class="list">
+              <span class="pill">Help Desk / Field</span>
+              <span class="pill">AD • O365 • Azure</span>
+              <span class="pill">Redes / Wi‑Fi / VLAN</span>
+              <span class="pill">Backup &amp; DR</span>
+              <span class="pill">Licenciamento Ambiental</span>
+              <span class="pill">SST • PGR • APR</span>
+              <span class="pill">Treinamentos &amp; DDS</span>
+            </div>
+          </div>
+          <div>
+            <h4 style="margin:0 0 8px">Diferenciais</h4>
+            <ul style="margin:0 0 0 18px">
+              <li>Integração TI + SST para redução de incidentes</li>
+              <li>Criação de dashboards e checklists digitais</li>
+              <li>Comunicação clara e foco no usuário</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="container">
+    <h3>Habilidades</h3>
+    <div class="grid cols-2">
+      <div class="card" style="padding:16px">
+        <h4 style="margin:0 0 10px">Tecnologia da Informação</h4>
+        <div class="tags">
+          <span class="tag">Windows • Linux</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">Office 365 / M365</span>
+          <span class="tag">Redes • TCP/IP • DHCP • DNS</span>
+          <span class="tag">Firewall • VPN</span>
+          <span class="tag">ITIL • Suporte N1/N2</span>
+          <span class="tag">Backup • Monitoramento</span>
+        </div>
+      </div>
+      <div class="card" style="padding:16px">
+        <h4 style="margin:0 0 10px">Segurança do Trabalho</h4>
+        <div class="tags">
+          <span class="tag">PGR • PCMSO</span>
+          <span class="tag">APR • Permissão de Trabalho</span>
+          <span class="tag">NR-06 • EPI</span>
+          <span class="tag">NR-10 • NR-12 • NR-17</span>
+          <span class="tag">NR-33 • NR-35</span>
+          <span class="tag">CAT • Investigação de Acidentes</span>
+          <span class="tag">ISO 45001 (noções)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIAS -->
+  <section id="experiencia" class="container">
+    <h3>Experiências</h3>
+    <div class="timeline">
+      <div class="titem card" style="padding:14px">
+        <h4>Analista de Suporte / Técnico de Segurança do Trabalho</h4>
+        <div class="meta">Empresa Exemplo • 2023 — atual • Localidade</div>
+        <p>Atuação híbrida em TI e SST: atendimento a usuários (100+), administração básica de rede e estações; elaboração e execução de PGR, inspeções, DDS e treinamentos. Redução de incidentes de TI em 28% e de quase-acidentes em 22% via checklists digitais.</p>
+      </div>
+      <div class="titem card" style="padding:14px">
+        <h4>Estágio em Segurança do Trabalho</h4>
+        <div class="meta">Indústria ABC • 2022 — 2023 • Localidade</div>
+        <p>Suporte a rotinas de SST (EPI, APR, permissões de trabalho), participação em CIPA e investigações de incidentes. Criação de planilhas e painel Power BI para indicadores de segurança.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="container">
+    <h3>Projetos em Destaque</h3>
+    <div class="grid cols-3">
+      <article class="proj-card card">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1487058792275-0ad4aaf24ca7" alt="Projeto dashboard de segurança">
+        <div class="content">
+          <h4>Dashboard de Segurança (Power BI)</h4>
+          <p>Painel com indicadores de acidentes, quase-acidentes, inspeções e treinamentos. Integração com forms e planilhas.</p>
+          <div class="list">
+            <span class="pill">BI</span><span class="pill">Indicadores</span><span class="pill">SST</span>
+          </div>
+          <div class="proj-actions" style="margin-top:12px">
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Demo</a>
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Código / Fonte</a>
+          </div>
+        </div>
+      </article>
+      <article class="proj-card card">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1518779578993-ec3579fee39f" alt="Automação de checklist">
+        <div class="content">
+          <h4>Checklist Digital de Inspeções</h4>
+          <p>Automação de checklists (manutenção, EPI, extintores) com planilhas e Apps Script, geração de alertas por e‑mail.</p>
+          <div class="list">
+            <span class="pill">Apps Script</span><span class="pill">Automação</span><span class="pill">Geração de PDF</span>
+          </div>
+          <div class="proj-actions" style="margin-top:12px">
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Demo</a>
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Código</a>
+          </div>
+        </div>
+      </article>
+      <article class="proj-card card">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1558494949-ef010cbdcc31" alt="Infraestrutura de redes">
+        <div class="content">
+          <h4>Infra &amp; Redes para Escritório</h4>
+          <p>Implantação de rede cabeada + Wi‑Fi com segmentação VLAN, VPN e backup automatizado para NAS.</p>
+          <div class="list">
+            <span class="pill">Redes</span><span class="pill">Firewall</span><span class="pill">Backup</span>
+          </div>
+          <div class="proj-actions" style="margin-top:12px">
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Case</a>
+            <a class="btn" href="file:///C:/Users/camar/Desktop/novo/index.html#">Arquitetura</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICAÇÕES -->
+  <section id="certificacoes" class="container">
+    <h3>Certificações &amp; Treinamentos</h3>
+    <div class="grid cols-3">
+      <div class="card cert" style="padding:12px">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1531297484001-80022131f5a1" alt="Badge TI">
+        <div>
+          <strong>AZ-900: Azure Fundamentals</strong>
+          <div class="muted">Microsoft • 2024</div>
+        </div>
+      </div>
+      <div class="card cert" style="padding:12px">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1531973576160-7125cd663d86" alt="Badge NR-10">
+        <div>
+          <strong>NR-10 Segurança em Eletricidade</strong>
+          <div class="muted">40h • 2023</div>
+        </div>
+      </div>
+      <div class="card cert" style="padding:12px">
+        <img src="./Ismael Camargo — Portfólio _ TI &amp; Segurança do Trabalho_files/photo-1542831371-d531d36971e6" alt="Badge ISO">
+        <div>
+          <strong>ISO 45001 (Awareness)</strong>
+          <div class="muted">Sistema de Gestão de SST • 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="container">
+    <h3>Contato</h3>
+    <div class="contact">
+      <div class="card" style="padding:16px">
+        <h4 style="margin-top:0">Vamos conversar</h4>
+        <p class="muted">Prefere e‑mail, WhatsApp ou LinkedIn? Respondo rápido 🙂</p>
+        <ul style="margin:0 0 0 18px">
+          <li>E‑mail: <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a></li>
+          <li>WhatsApp: <a href="https://wa.me/5599999999999" target="_blank" rel="noopener">+55 (99) 99999‑9999</a></li>
+          <li>LinkedIn: <a href="file:///C:/Users/camar/Desktop/novo/index.html#" target="_blank" rel="noopener">/in/seu-usuario</a></li>
+          <li>GitHub: <a href="file:///C:/Users/camar/Desktop/novo/index.html#" target="_blank" rel="noopener">/seu-usuario</a></li>
+        </ul>
+      </div>
+      <form class="card" style="padding:16px" onsubmit="event.preventDefault(); alert(&#39;Mensagem enviada! (exemplo)&#39;);">
+        <label>
+          <span class="visually-hidden">Nome</span>
+          <input required="" placeholder="Seu nome">
+        </label>
+        <label>
+          <span class="visualmente-hidden">E‑mail</span>
+          <input type="email" required="" placeholder="Seu e‑mail">
+        </label>
+        <label>
+          <span class="visually-hidden">Mensagem</span>
+          <textarea rows="5" required="" placeholder="Como posso ajudar?"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year">2025</span> • Seu Nome — TI &amp; Segurança do Trabalho • Feito com ♥
+  </footer>
+
+  <script>
+    // Ano automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Alternar tema claro/escuro
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      const isLight = document.documentElement.dataset.theme === 'light';
+      document.documentElement.dataset.theme = isLight ? 'dark' : 'light';
+      if(!isLight){
+        // tema claro
+        document.documentElement.style.setProperty('--bg', '#f8fafc');
+        document.documentElement.style.setProperty('--card', '#ffffff');
+        document.documentElement.style.setProperty('--muted', '#64748b');
+        document.documentElement.style.setProperty('--text', '#0f172a');
+        document.documentElement.style.setProperty('--shadow', '0 10px 30px rgba(2,6,23,0.08)');
+        document.documentElement.style.setProperty('--ring', 'rgba(99,102,241,0.25)');
+      } else {
+        // tema escuro
+        document.documentElement.style.setProperty('--bg', '#0b0f17');
+        document.documentElement.style.setProperty('--card', '#0f1624');
+        document.documentElement.style.setProperty('--muted', '#94a3b8');
+        document.documentElement.style.setProperty('--text', '#e2e8f0');
+        document.documentElement.style.setProperty('--shadow', '0 10px 30px rgba(0,0,0,0.35)');
+        document.documentElement.style.setProperty('--ring', 'rgba(34, 211, 238, 0.35)');
+      }
+    });
+  </script>
+
+</body></html>
