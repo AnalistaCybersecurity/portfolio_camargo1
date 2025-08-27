@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css" />
+   <link rel="icon" type="image/x-icon" href="img/microchip.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {  
@@ -137,6 +138,57 @@
     @media (max-width:800px){.split{grid-template-columns:1fr}}
 
     .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+
+<!--Meus projetos-->
+
+    #portfolio {
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.projeto h3 {
+    margin: 15px 0 10px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #0077ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.projeto a:hover {
+    background: #0055aa;
+}
   </style>
 </head>
 <body>
@@ -145,7 +197,7 @@
     <div class="nav-inner container">
       <a class="brand" href="#top" aria-label="Ir para o topo">
         <span aria-hidden="true" class="logo"></span>
-        <h1>Ismael Camargo - in update</h1>
+        <h1>Ismael Camargo </h1>
       </a>
       <div class="nav-links">
         <a href="#sobre">Sobre</a>
@@ -171,6 +223,7 @@
         <span class="badge">NR-10 • NR-35</span>
         <span class="badge">ISO 45001</span>
         <span class="badge">CIPA</span>
+        <span class="badge">ESG</span>
       </div>
       <div style="display:flex;gap:12px;margin-top:18px">
         <a class="btn primary" href="#projetos">Ver projetos</a>
@@ -376,7 +429,36 @@
     </div>
   </section>
 
-  <!-- CONTATO -->
+
+  <section id="portfolio">
+    <h2>Meus Projetos</h2>
+    <div class="projetos">
+        <!-- Projeto 1 -->
+        <div class="projeto_Android ">
+            <img src="img/android/img/bugdroid.png" style="width: 100px; height: 80px; display: inline-flex;"  alt="Imagem do Projeto_android">
+            <img src="img/android/img/dan-droids-pq.png" style="width: 100px; height: 80px; display: inline-flex;"   alt="img">
+            <img src="img/android/img/dan-droids.png" style="width: 100px; height: 80px;" alt="dan">
+            <img src="img/android/img/irina-blok-pq.jpg"  style="width: 100px; height: 80px;display: inline-flex;" alt="grande">
+            <img src="img/android/img/irina-blok.jpg" style="width: 100px; height: 80px;display: inline-flex;" alt="pq">
+            <h3>Projeto 1 - Sistema de Login</h3>
+            <p>Um sistema simples de autenticação com HTML, CSS e JavaScript.</p>
+            <a href="https://github.com/AnalistaCybersecurity/projeto-android-main/blob/main/index.html" target="_blank">Ver Código</a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="projeto">
+            <img src="img/cordel/background01.jpg"style="width: 100px; height: 80px;display: inline-flex; alt="Imagem do Projeto 2">
+            <img src="img/cordel/background02.jpg"style="width: 100px; height: 80px;display: inline-flex; alt="Imagem do Projeto 2">
+            <h3>Projeto 2 - Site de Portfólio</h3>
+            <p>Site responsivo para mostrar meus trabalhos de desenvolvimento web.</p>
+            <a href="https://github.com/AnalistaCybersecurity/projeto-cordel-01-man/blob/main/README.md" target="_blank">Ver Código</a>
+        </div>
+
+    </div>
+</section>
+
+
+ <!-- CONTATO -->
   <section id="contato" class="container">
     <h3>Contato</h3>
     <div class="contact">
